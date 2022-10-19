@@ -9,7 +9,7 @@ class P(BaseFunctions):
         self.output = ""
 
     def return_p(self, value1: str, value2: str):
-        self.output = str((int(value1.strip().replace(" ", "")) + int(value2.strip().replace(" ", "")) * 2))
+        self.output = str(((int(value1.strip().replace(" ", "")) + int(value2.strip().replace(" ", ""))) * 2))
         self.render(self.output)
 
     def register_p(self):
