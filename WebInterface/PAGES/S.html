@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="../CSS/P.css">
+    <title>Периметр</title>
+</head>
+<body>
+<div class="container">
+    <h1>Вычисление Площади</h1>
+    <input type="text" name="fnum" id="fnum" placeholder="первая сторона"><br>
+    <input type="text" name="snum" id="snum" placeholder="вторая сторана"><br>
+    <button type="submit" onclick="s()">Вычислить</button>
+    <label id="answer">Ответ: <p id="output"></p></label>
+    <p onclick="navigate('/index.html')">BACK</p>
+</div>
+</body>
+<script>
+    function s(){
+        let val1 = document.getElementById("fnum").value
+        let val2 = document.getElementById("snum").value
+        if (!(val1 && val2)) return
+        eel.return_s(val1, val2)()
+    }
+</script>
+<script src="../JS/LogicFront.js"></script>
+</html>

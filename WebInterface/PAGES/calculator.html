@@ -1,0 +1,49 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <script type="text/javascript" src="/eel.js"></script>
+    <title>Clever Calculator</title>
+</head>
+<body>
+<div id="container">
+    <div id="calculator">
+        <div id="result">
+            <div id="history">
+                <p id="history-value"></p>
+            </div>
+            <div id="output">
+                <p id="output-value"></p>
+            </div>
+        </div>
+        <div id="keyboard">
+            <button class="operator" id="clear">C</button>
+            <button class="operator" id="backspace" onclick="eel.ce()()">CE</button>
+            <button class="operator" id="%" onclick="eel.add_char('%')()">%</button>
+            <button class="operator" id="/" onclick="eel.add_char('&#247')()">&#247;</button>
+            <button class="number" id="7" onclick="eel.add_num(7)()">7</button>
+            <button class="number" id="8" onclick="eel.add_num(8)()">8</button>
+            <button class="number" id="9" onclick="eel.add_num(9)()">9</button>
+            <button class="operator" id="*" onclick="eel.add_char('&times;')()">&times;</button>
+            <button class="number" id="4" onclick="eel.add_num(4)()">4</button>
+            <button class="number" id="5" onclick="eel.add_num(5)()">5</button>
+            <button class="number" id="6" onclick="eel.add_num(6)()">6</button>
+            <button class="operator" id="-" onclick="eel.add_char('-')()">-</button>
+            <button class="number" id="1" onclick="eel.add_num(1)()">1</button>
+            <button class="number" id="2" onclick="eel.add_num(2)()">2</button>
+            <button class="number" id="3" onclick="eel.add_num(3)()">3</button>
+            <button class="operator" id="+" onclick="eel.add_char('+')()">+</button>
+            <button class="empty" id="empty1"></button>
+            <button class="number" id="0" onclick="eel.add_num(0)()">0</button>
+            <button class="empty" id="empty2"></button>
+            <button class="operator" id="=" onclick="eel.return_result()()">=</button>
+        </div>
+    </div>
+    <p onclick="navigate('/index.html')">back</p>
+</div>
+</body>
+<script>
+    eel.on_load()()
+</script>
+<script src="../JS/LogicFront.js"></script>
+</html>
