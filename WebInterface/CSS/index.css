@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     text-align: center;
     display: flex;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .btn {

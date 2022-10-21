@@ -11,7 +11,7 @@ def run():
     S().register_s()
     Distance().register_distance()
     Speed().register_speed()
-    eel.start("index.html", size=(370, 640))
+    eel.start("index.html", size=(390, 660))
 
 
 run()
